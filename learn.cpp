@@ -12,10 +12,10 @@ struct things{
 
 //Menu 1
 void viewStocks(){
-    for (int i = 0; i < currentStock; i++){
+    for (int i = 0; i < currentThings; i++){
         cout << i+1 <<". Name : "<<th[i].name << endl;
         cout << "Price : Rp " << th[i].price << ",- \n";
-        cout << "Current stock : " << th[i].stock << endl;
+        cout << "Current stock : " << th[i].stock << endl << endl;
     }
 }
 //menu 1 end
@@ -70,7 +70,7 @@ int main(){
         switch (menu)
         {
         case 1:
-            if (currentStock > 0){
+            if (currentThings > 0){
                 viewStocks();
             }else{
             cout << "No stock available/ \n";
